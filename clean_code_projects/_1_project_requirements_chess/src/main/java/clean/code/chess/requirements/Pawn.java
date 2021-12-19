@@ -25,6 +25,7 @@ public class Pawn {
 
     public void setXCoordinate(int value) {
         this.xCoordinate = value;
+
     }
 
     public int getYCoordinate() {
@@ -39,7 +40,7 @@ public class Pawn {
         return this.pieceColor;
     }
 
-    private void setPieceColor(PieceColor value) {
+    public void setPieceColor(PieceColor value) {
         pieceColor = value;
     }
 
@@ -56,4 +57,6 @@ public class Pawn {
         String eol = System.lineSeparator();
         return String.format("Current X: {1}{0}Current Y: {2}{0}Piece Color: {3}", eol, xCoordinate, yCoordinate, pieceColor);
     }
+
+
 }
